@@ -358,6 +358,9 @@ const getWatchHistory = asyncHandler(async(req,res) => {
    ])
    return res.status(201).json(new ApiResponse(201,user[0].watchHistory,"Watch history fetched successfully!"))
 })
+const deleteUserFromDb = asyncHandler(async(req,res) => {
+    await User.findByIdAndDelete(req.user?._id)
+})
 export {
     registerUser,
     loginUser,
