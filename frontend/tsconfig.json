@@ -13,5 +13,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-, "components/screens/WelcomeScreen.jsx", "components/screens/SignInScreen.jsx", "components/screens/SignUpScreen.jsx"  ]
+, "components/screens/WelcomeScreen.jsx", "components/screens/SignInScreen.jsx", "components/screens/SignUpScreen.jsx", "app/(tabs)/index.jsx"  ]
 }

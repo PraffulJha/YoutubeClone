@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, Text, TextInput, TouchableOpacity, Image, StatusBar, Animated } from 'react-native';
+import { StyleSheet, View, Text, TextInput, TouchableOpacity, StatusBar, Animated } from 'react-native';
 import LottieView from 'lottie-react-native';
 
 const SignInScreen = ({ navigation }) => {
@@ -20,7 +20,7 @@ const SignInScreen = ({ navigation }) => {
         <View style={styles.container}>
             {/* Lottie animation as background */}
             <LottieView
-                source={require('../assets/bganimation.json')} // Path to your Lottie file
+                source={require('../../assets/animations/bganimation.json')} // Path to your Lottie file
                 autoPlay
                 loop
                 style={styles.backgroundAnimation}
