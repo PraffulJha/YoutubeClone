@@ -64,14 +64,16 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation(libs.coil.compose)
     implementation(libs.androidx.navigation.compose) // Check for the latest version
-    implementation ("com.airbnb.android:lottie-compose:6.6.2")
-    implementation("androidx.compose.material:material:1.7.6")
-    implementation("androidx.compose.foundation:foundation:1.7.6")
-    implementation("com.google.dagger:hilt-android:2.51.1")
-    kapt("com.google.dagger:hilt-android-compiler:2.51.1")
-    implementation("com.squareup.retrofit2:retrofit:2.11.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
-    implementation("androidx.compose.material:material-icons-extended:1.7.6")
+    implementation (libs.lottie.compose)
+    implementation(libs.androidx.material)
+    implementation(libs.androidx.foundation)
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.android.compiler)
+    implementation(libs.retrofit)
+    implementation (libs.okhttp) // Use the latest version
+    implementation (libs.logging.interceptor) // Optional, for logging
+    implementation(libs.converter.gson)
+    implementation(libs.androidx.material.icons.extended)
 
 
 }

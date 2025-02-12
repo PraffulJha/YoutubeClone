@@ -1,7 +1,7 @@
 package com.example.frontend.apicall
 
 import com.example.frontend.apicall.responseModel.ResponseLoginUser
-import com.example.frontend.apicall.responseModel.User
+import com.example.frontend.apicall.responseModel.ServerRegisterUser
 import okhttp3.MultipartBody
 import retrofit2.Call
 import retrofit2.http.Body
@@ -19,7 +19,7 @@ interface ApiInterface {
 
     @POST("register")
     fun registerUser(@Header("Content-Type") contentType: String?,
-                     @Body body: MultipartBody?) : Call<User>
+                     @Body body: MultipartBody?) : Call<ServerRegisterUser>
     @PATCH("avatar")
     fun changeAvatar(@Header("Content-Type") contentType: String?,
                      @Body body: MultipartBody?)

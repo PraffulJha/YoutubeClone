@@ -1,5 +1,6 @@
 package com.example.frontend.modules
 
+import com.example.frontend.Utility.Constants.BASE_URL
 import com.example.frontend.apicall.*
 import dagger.Module
 import dagger.Provides
@@ -18,7 +19,7 @@ object AppModule{
     @Singleton
     fun providesRetrofitInstance() : ApiInterface{
         val retrofitInstance = Retrofit.Builder()
-            .baseUrl("https://youtube-clone-livid-eight.vercel.app/")
+            .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
         return retrofitInstance.create(ApiInterface::class.java)
